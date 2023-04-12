@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grid View Switch Animation | Codrops</title>
+		<meta name="description" content="An animation for a grid to slideshow view switch." />
+		<meta name="keywords" content="grid, flip, gsap, switch, slideshow, animation" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/azf8ezv.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+	</head>
+	<body class="loading">
+		<main>
+			<div class="frame">
+				<div class="frame__title"> 
+					<h1 class="frame__title-main">Grid View Switch</h1> 
+					<a aria-label="Back to the article" class="frame__title-back" href="https://tympanus.net/codrops/?p=71545"> 
+						<span class="oh__inner">Back to the article</span> 
+						<svg width="18px" height="18px" viewBox="0 0 24 24"><path vector-effect="non-scaling-stroke" d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"></path>
+						</svg>
+					</a>
+				</div>
+				<div class="frame__heading">Linenique</div>
+				<a class="frame__prev" href="https://tympanus.net/Development/PixelTransition/">Previous demo</a>
+				<div class="switch"> 
+					<span class="switch__text">Choose your view </span>
+					<button class="switch__button switch__button--grid unbutton"> <svg width="20" height="20" viewBox="0 0 45 45"><rect width="20" height="20"></rect><rect x="25" width="20" height="20"></rect><rect y="25" width="20" height="20"></rect><rect x="25" y="25" width="20" height="20"></rect></svg> </button> 
+					<button class="switch__button switch__button--list unbutton"> <svg width="22" height="20" viewBox="0 0 22 24"><path d="M0,0 L22,0 L22,18 L0,18 L0,0 Z M0,20 L4,20 L4,24 L0,24 L0,20 Z M6,20 L10,20 L10,24 L6,24 L6,20 Z M12,20 L16,20 L16,24 L12,24 L12,20 Z M18,20 L22,20 L22,24 L18,24 L18,20 Z"></path></svg> </button>
+				</div>
+			</div>
+			<div class="columns">
+				<div class="column column--moveup">
+					<div class="column-inner">
+						<figure class="column__item">
+							<div class="column__item-imgwrap">
+								<div class="column__item-img" style="background-image:url(img/13.jpg)"></div>
+							</div>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap">
+								<div class="column__item-img" style="background-image:url(img/2.jpg)"></div>
+							</div>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap">
+								<div class="column__item-img" style="background-image:url(img/15.jpg)"></div>
+							</div>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap">
+								<div class="column__item-img" style="background-image:url(img/16.jpg)"></div>
+							</div>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap">
+								<div class="column__item-img" style="background-image:url(img/11.jpg)"></div>
+							</div>
+						</figure>
+					</div>
+				</div>
+				<div class="column column--movedown">
+					<div class="column-inner">
+						<div class="column-inner">
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/7.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/18.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/3.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/24.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/1.jpg)"></div>
+								</div>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="column column--moveup">
+					<div class="column-inner">
+						<div class="column-inner">
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/15.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/12.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/5.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/8.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap push">
+									<div class="column__item-img" style="background-image:url(img/feat1.jpg)"></div>
+								</div>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="column column--movedown">
+					<div class="column-inner">
+						<div class="column-inner">
+							<figure class="column__item">
+								<div class="column__item-imgwrap flip">
+									<div class="column__item-img" style="background-image:url(img/feat2.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/10.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/9.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/20.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/22.jpg)"></div>
+								</div>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="column column--moveup">
+					<div class="column-inner">
+						<div class="column-inner">
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/19.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/17.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/16.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/21.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/13.jpg)"></div>
+								</div>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="column column--movedown">
+					<div class="column-inner">
+						<div class="column-inner">
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/1.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/2.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/6.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/15.jpg)"></div>
+								</div>
+							</figure>
+							<figure class="column__item">
+								<div class="column__item-imgwrap">
+									<div class="column__item-img" style="background-image:url(img/1.jpg)"></div>
+								</div>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="content__item">
+					<!-- .flip element will get inserted here-->
+				</div>
+				<h1 class="content__title">
+					<span class="oh"><span>Nadia</span></span>
+					<span class="oh"><span>Buriki</span></span>
+				</h1>
+				<nav class="content__nav">
+					<div class="content__nav-item content__nav-item--current" style="background-image:url(img/feat2_small.jpg)"></div>
+					<div class="content__nav-item" style="background-image:url(img/6.jpg)"></div>
+					<div class="content__nav-item" style="background-image:url(img/7.jpg)"></div>
+					<div class="content__nav-item" style="background-image:url(img/8.jpg)"></div>
+					<div class="content__nav-item" style="background-image:url(img/9.jpg)"></div>
+					<div class="content__nav-item" style="background-image:url(img/10.jpg)"></div>
+					<div class="content__nav-item" style="background-image:url(img/5.jpg)"></div>
+					<div class="content__nav-item content__nav-item--more">···</div>
+				</nav>
+			</div>
+		</main>
+		<script src="js/gsap.min.js"></script>
+		<script src="js/Flip.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+		<script type="module" src="js/index.js"></script>
+	</body>
+</html>
